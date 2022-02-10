@@ -35,6 +35,7 @@ header{
     font-size: 1.5rem;
     color: whitesmoke;
     cursor: crosshair;
+
 }
 .logo-title{
     width: 100%;
@@ -314,12 +315,27 @@ header{
     position: fixed;
     color: white;
     bottom: 1%;
-    width: 100%;
     display: flex;
     justify-content: center;
     opacity: .5;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+    overflow: hidden;
 }
-
+@keyframes float {
+	0% {
+		text-shadow: 0 5px 15px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		text-shadow: 0 25px 15px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		text-shadow: 0 5px 15px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
 #home{
     height: calc(100vh - 5rem);
     min-width: 100%;
@@ -340,6 +356,9 @@ header{
     font-size: 5rem;
     display: flex;
     flex-wrap: wrap;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+    overflow: hidden;
 }
 /*
 Projects Page //////////////////////////////////////////////////////////////////////////////////////
@@ -397,6 +416,7 @@ Projects Page //////////////////////////////////////////////////////////////////
     display: flex;
     align-items: center;
     flex-direction: column;
+    
 }
 .project-card:hover{
     box-shadow: 1px 1px 5px 1px rgba(184, 178, 178, .1);
