@@ -531,15 +531,15 @@ Projects Page //////////////////////////////////////////////////////////////////
 }
 .go-to-website::before{
     content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 2px;
+    position: absolute;
+    top: 7.7%;
+    left: 5%;
+    height: 1px;
     width: 0;
-    background: red;
+    background: greenyellow;
 }
 .go-to-website:hover::before{
-    width: 100%;
+    width: 90%;
     transition: .5s;
 }
 .go-to-website a{
