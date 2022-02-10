@@ -397,6 +397,11 @@ Projects Page //////////////////////////////////////////////////////////////////
     font-size: 1.2rem;
     color: white;
 }
+.menu-icons:hover{
+    transform: translateY(-2px);
+    text-shadow: 1px 1px 5px black;
+    transition: .2s;
+}
 .project-container-top h2{
     margin: .5rem;
 }
