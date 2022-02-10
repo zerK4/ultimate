@@ -16,6 +16,17 @@ const project = document.querySelector('.project')
 const about = document.querySelector('.about')
 const contact = document.querySelector('.contact')
 const closeOnClick = document.querySelectorAll('.close-on-click')
+const projectCard = document.querySelectorAll('.project-card')
+
+projectCard.forEach((projectCard)=>{
+    projectCard.addEventListener('mouseover', ()=>{
+        projectCard.style.transform = 'translateY(-5px)'
+        projectCard.style.transition = '.5s'
+    })
+    projectCard.addEventListener('mouseout', ()=>{
+        projectCard.style.transform = '';
+    })
+})
 
 closeOnClick.forEach((closeOnClick)=>{
     closeOnClick.addEventListener('click', ()=>{
