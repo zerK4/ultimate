@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to bottom,#060a16, #010114);
+    min-height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-left{
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corner::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    opacity: 0;
+}
+.corner:hover::before{
+    opacity: 1;
+    transition: .5s;
+    width: 10rem;
+    height: 10rem;
+    background-image: radial-gradient(circle, rgba(6, 10, 22, .1), rgb(12, 25, 65))
+}
+.corner::after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    opacity: 0;
+}
+.corner:hover::after{
+    opacity: 1;
+    transition: .5s ease-in-out;
+    width: 8rem;
+    height: 8rem;
+    background-image: radial-gradient(circle, rgba(6, 10, 22, .1), rgb(12, 25, 65));
+}
+.top-right{
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-left{
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-right{
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corner{
+    margin: 2rem;
+}
+
+
+/*Sections*/
+
+#home{
+    display: flex;
+}
+.menu-container{
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    position: relative;
+    height: auto;
+}
+.menu-container h1{
+    font-size: 2rem;
+}
+.projects{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    display: none;
+}
+.project-card{
+    width: 20%;
+    height: 30rem;
+    background: #000;
+}

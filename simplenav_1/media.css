@@ -1,0 +1,14 @@
+@media(max-width: 1000px){
+    .navigation{
+        display: none;
+    }
+    .h-menu-action{
+        display: flex;
+    }
+    .hidden-nav{
+        display: none;
+    }
+    .bi-list{
+        display: flex;
+    }
+}

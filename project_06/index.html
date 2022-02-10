@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <i class="bi bi-list"></i><i class="bi bi-x-lg"></i>
+        <div class="sliding-menu">
+            <a href="#home"><li class="nav-link-sliding">Home</li></a>
+            <a href="#projects"><li class="nav-link-sliding">Projects</li></a>
+            <a href="#cv"><li class="nav-link-sliding">CV</li></a>
+            <a href="#contact"><li class="nav-link-sliding">Contact</li></a>
+        </div>
+        <ul class="navigation">
+            <a href="#home"><li class="nav-link">Home</li></a>
+            <a href="#projects"><li class="nav-link">Projects</li></a>
+            <a href="#cv"><li class="nav-link">CV</li></a>
+            <a href="#contact"><li class="nav-link">Contact</li></a>
+        </ul>
+        <div class="logo">
+            <img src="./svg/logo.svg" alt="Logo">
+        </div>
+    </header>
+    <i class="bi bi-arrow-up-circle go-top" onclick="toTopFunction()"></i>
+    <main id="home">
+        <div class="main-profile">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="circle-4"></div>
+            <img src="./svg/main-profile.svg" alt="">
+            <div class="main-text"><h1 class="main-title">Hello there</h1>
+            <p class="text-content">I am Sebastian, and i am a self tought web developer.</br>
+            </br>
+                This is my personal portfolio, here you will not find web apps that were made for companies or even other persons but for this portfolio.<br>
+                <br>
+                I hope you will enjoy my work!
+            </p></div>
+        </div>
+    </main>
+    <div class="breakline"></div>
+    <div id="projects">
+        <div class="project">
+            <div class="project-card lines">
+                <h1 class="card-title">Simple Login/Register page</h1>
+                <p class="card-content">This is a simple login and register page </br> fully configured for mobile use too.</p>
+                <button class="goto">Go to website</button>
+            </div>
+            <div class="img-container lines-img">
+                <p class="text1">Used: <br>
+                    HTML, CSS and JS
+                </p>
+                <p class="text2">Mobile: <br>
+                    Fully optimized
+                </p>
+                <p class="text3">Ready to be used!</p>
+            <img class="project-1-img" src="./svg/project_1.svg" alt="">
+            </div>
+        </div>
+        <div class="project">
+            <div class="img-container lines-img">
+                <p class="text5">Used: <br>
+                    HTML, CSS, JS and<bR> chart JS.
+                </p>
+                <p class="text4">Mobile: <br>
+                    Not optimised for<br> mobile yet.
+                </p>
+                <p class="text3">Ready to be used!</p>
+            <img class="project-1-img" src="./svg/project_1.svg" alt="">
+            </div>
+            <div class="project-card lines">
+                <h1 class="card-title">Admin Pannel</h1>
+                <p class="card-content">Simple admin pannel with charts to track activity.</p>
+                <button class="goto">Go to website</button>
+            </div>
+        </div>
+    </div>
+    <div class="breakline"></div>
+    
+    <div id="cv">
+        <div class="info">
+            <img class="left-svg" src="./svg/cv-container.svg" alt="">
+            <h1 class="about">Skills</h1>
+            <li class="html">HTML Level</li>
+            <li class="css">CSS Level</li>
+            <li class="js">JavaScript Level</li>
+            <li class="python">Python Level</li>
+            <div class="border"></div>
+            <img class="right-svg" src="./svg/tree.svg" alt="">
+            <div class="sun"></div>
+        </div>
+        <div class="info"></div>
+    </div>
+<footer id="footer">
+    <div class="footer-ball"></div>
+    <div class="footer-ball1"></div>
+    <div class="footer-ball2"></div>
+    <div class="footer-ball3"></div>
+    <div class="footer-ball4"></div>
+    <div class="footer-ball5"></div>
+    <div class="footer-ball6"></div>
+    <div class="footer-ball7"></div>
+    <div class="footer-ball8"></div>
+    <div class="footer-ball9"></div>
+    <div class="footer-ball10"></div>
+    <div class="footer-ball11"></div>
+    <ul class="contact">
+        <li class="contact-item"><i class="bi bi-envelope-fill"></i>sebastian.v.pavel@gmail.com</li>
+        <li class="contact-item"><i class="bi bi-telephone"></i>Phone number</li>
+    </ul>
+    <ul class="social">
+        <a href=""><li class="social-item"><i class="bi bi-facebook"></i> Social</li></a>
+        <a href=""><li class="social-item"><i class="bi bi-instagram"></i> Social</li></a>
+        <a href=""><li class="social-item"><i class="bi bi-linkedin"></i> Social</li></a>
+        <a href=""><li class="social-item"><i class="bi bi-github"></i> Social</li></a>
+    </ul>
+</footer>
+    <script src="./script.js"></script>
+</body>
+</html>
