@@ -27,6 +27,7 @@ header{
     height: 5rem;
     align-items: center;
 }
+
 .logo{
     margin-left: 2rem;
     display: flex;
@@ -59,7 +60,9 @@ header{
     width: 3px;
     background: red;
     position: absolute;
-    right: -5%;
+    right: -11%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 .logo:hover .logo-text::after{
     height: 100%;
@@ -352,6 +355,11 @@ header{
     align-items: center;
 }
 .container-title{
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
     color: whitesmoke;
     opacity: .6;
     font-size: 5rem;
