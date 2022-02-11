@@ -15,10 +15,29 @@
     color: black;
     cursor: crosshair;
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #48667e;
+  }
+   
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .4);
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
 body{
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     position: relative;
 }
+
 .line{
     background: rgba(255, 0, 0, .2);
     width: 2px;
