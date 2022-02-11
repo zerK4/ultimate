@@ -17,6 +17,60 @@ const about = document.querySelector('.about')
 const contact = document.querySelector('.contact')
 const closeOnClick = document.querySelectorAll('.close-on-click')
 const projectCard = document.querySelectorAll('.project-card')
+const line = document.querySelector('.line')
+const scrollBall = document.querySelector('.scroll-ball')
+
+
+
+
+function scrollFunction(){
+    if(document.body.scroll < 50 || document.documentElement.scrollTop < 50) {
+        scrollBall.style.top = '0'
+        scrollBall.style.transition = '1s'
+        scrollBall.style.opacity = '.01'
+        scrollBall.style.height = '5rem'
+        scrollBall.style.width = '97vw'
+        scrollBall.style.borderRadius = ''
+        scrollBall.style.borderRadius = '8px'
+        scrollBall.innerText = ''
+        scrollBall.style.background = 'black'
+    }
+    if(document.body.scroll > 220 || document.documentElement.scrollTop > 220) {
+        scrollBall.style.top = '30%'
+        scrollBall.style.transition = '1.5s'
+        scrollBall.style.opacity = '.5'
+        scrollBall.style.height = '3rem'
+        scrollBall.style.width = '15rem'
+        scrollBall.style.borderRadius = '8px'
+        scrollBall.innerText = 'Projects'
+        scrollBall.style.fontSize = '1.3rem'
+        scrollBall.style.background = 'red'
+    }
+    if(document.body.scroll > 1520 || document.documentElement.scrollTop > 1520) {
+        scrollBall.style.top = '65.5%'
+        scrollBall.style.transition = '1.5s'
+        scrollBall.style.opacity = '.5'
+        scrollBall.style.height = '3rem'
+        scrollBall.style.width = '15rem'
+        scrollBall.style.borderRadius = '8px'
+        scrollBall.innerText = 'About'
+        scrollBall.style.fontSize = '1.3rem'
+        scrollBall.style.background = 'red'
+    }
+    if(document.body.scroll > 2000 || document.documentElement.scrollTop > 2000) {
+        scrollBall.style.top = '82.8%'
+        scrollBall.style.transition = '1.5s'
+        scrollBall.style.opacity = '.5'
+        scrollBall.style.height = '3rem'
+        scrollBall.style.width = '15rem'
+        scrollBall.style.borderRadius = '8px'
+        scrollBall.innerText = 'Contact'
+        scrollBall.style.fontSize = '1.3rem'
+        scrollBall.style.background = 'red'
+    }
+
+}
+window.onscroll = function(){scrollFunction()};
 
 projectCard.forEach((projectCard)=>{
     projectCard.addEventListener('mouseover', ()=>{
